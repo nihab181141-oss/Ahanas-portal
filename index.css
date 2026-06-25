@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #FADADD;
+  --color-blush-dark: #E8A2A2;
+  --color-rose-pink: #E8A2A2;
+  --color-soft-peach: #FDFBF7;
+  --color-warm-ivory: #FDFBF7;
+  --color-champagne: #F3ECE7;
+  --color-dusty-rose: #8B7E7E;
+  --color-soft-lavender: #F2E9FC;
+  --color-muted-gold: #D4AF37;
+  --color-sage: #98B4A6;
+  --color-ivory: #FDFBF7;
+  --color-cream: #FDFBF7;
+  --color-deep-charcoal: #4A4444;
+  --color-soft-gray: #A89F9F;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #FDFBF7;
+    color: #4A4444;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Delicate custom scrollbar for luxury feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #EEDFD7;
+    border-radius: 99px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E0C7BC;
+  }
+}
+
+/* Beautiful blossom pattern background overlays */
+.floral-bg-fade {
+  background-image: radial-gradient(circle at 100% 100%, #FFF5F5 0%, transparent 40%),
+                    radial-gradient(circle at 0% 0%, #FAF0EC 0%, transparent 35%);
+}
+
+.custom-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.frosted-glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.frosted-glass-card-accent {
+  background: rgba(250, 218, 221, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.frosted-glass-sidebar {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.animated-pulse-pink {
+  animation: pulse-pink 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-pink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .7;
+    transform: scale(1.03);
+  }
+}

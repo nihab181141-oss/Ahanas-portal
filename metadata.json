@@ -1,0 +1,8 @@
+{
+  "name": "AHANA'S PORTAL",
+  "description": "A premium feminine personal finance and lifestyle operating system designed for elegance, beauty, and voice-intelligent guidance.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
